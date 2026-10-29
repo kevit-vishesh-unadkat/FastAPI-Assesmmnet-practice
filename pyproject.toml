@@ -1,0 +1,22 @@
+[project]
+name = "frameworks-challenges"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "kevit-prit-kanani", email = "prit.kanani@kevit.io" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.141.1",
+    "httpx>=0.28.1",
+    "pydantic>=2.13.4",
+    "pytest>=9.1.1",
+]
+
+[project.scripts]
+frameworks-challenges = "frameworks_challenges:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
